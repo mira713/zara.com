@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./styles/payments.css">
+    <link rel="stylesheet" href="./styles/header.css" />
+    <link rel="stylesheet" href="./styles/footer.css" />
+</head>
+<body>
+    <div id="header"></div>
+    <div id="ravi" style="margin-top: 100px;">
+        <h1>ENTER YOUR BANK DETAILS</h1>
+    <div id="container"></div>
+    <div id="bank">
+        <div>
+            <input type="text" name="" id="name" placeholder="ACCOUNT HOLDER NAME">
+            <input type="number" id="acount_num"  placeholder="ACCOUNT NUMBER" >
+            <input type="date" id="date" placeholder="DATE">
+        </div>
+        <div>
+            <input type="text" id="signature" placeholder="SIGNATURE">
+            <button id="proceed" style="background-color: red;color:white; border:0px; padding:10px;border-radius:10px;">Proceed</button>
+        </div>
+    </div>
+    <div style="height:400px;"></div>
+    <div id="items"></div>
+    </div>
+    
+    <div id="footer"></div>
+</body>
+</html>
+<script type="module">
+    import  { header }  from "./components/header.js";
+  import { footers } from "./components/footer.js";
+  let navbar_div = document.getElementById("header");
+  let footer_div = document.getElementById("footer");
+  footer_div.innerHTML = footers();
+  navbar_div.innerHTML = header();
+</script>
+<script src="./scripts/selected.js"></script>
